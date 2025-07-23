@@ -39,3 +39,6 @@ Currently in development – MVP goals:
 
 ## 📁 Folder Structure (planned)
 
+## ✍️ Author
+
+Vincent-Ryan Arceo – [GitHub](https://github.com/VincentRyanArceo) | [LinkedIn](https://www.linkedin.com/in/vincentryanarceo/)
