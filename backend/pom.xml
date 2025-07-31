@@ -4,55 +4,57 @@
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <!-- ✅ ADD THIS -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.4</version> <!-- Or latest stable -->
+        <relativePath/> <!-- Lookup from Maven Central -->
+    </parent>
+
     <groupId>com.vra</groupId>
     <artifactId>restrooms</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>CRAPR - Restroom Review App</name>
+    <name>CRAPPR - Restroom Review App</name>
     <description>Backend for public restroom review web app</description>
     <packaging>jar</packaging>
 
     <properties>
-        <java.version>17</java.version> <!-- or 21 if you're using it -->
-        <spring.boot.version>3.2.4</spring.boot.version>
+        <java.version>17</java.version>
     </properties>
 
     <dependencies>
+        <!-- Your dependencies (same as before) -->
         <!-- Spring Boot Web (for REST APIs) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <!-- Spring Data JPA (for database access) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
-
-        <!-- Spring Security (for login/review posting access) -->
+        <!-- Spring Security (for login/review posting access)-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
-
-        <!-- PostgreSQL Driver -->
+        <!-- PostgresSQL Driver -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>42.7.2</version>
         </dependency>
-
-        <!-- Optional: Validation (e.g. @NotNull, @Email) -->
+        <!-- Optional: Validation annotations -->
         <dependency>
             <groupId>jakarta.validation</groupId>
             <artifactId>jakarta.validation-api</artifactId>
         </dependency>
-
-        <!-- Test dependencies -->
+        <!-- Testing dependencies -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 
