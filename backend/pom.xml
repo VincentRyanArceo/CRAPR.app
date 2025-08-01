@@ -14,7 +14,7 @@
     <groupId>com.vra</groupId>
     <artifactId>restrooms</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>CRAPPR - Restroom Review App</name>
+    <name>CRAPR - Restroom Review App</name>
     <description>Backend for public restroom review web app</description>
     <packaging>jar</packaging>
 
